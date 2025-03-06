@@ -15,6 +15,7 @@ p {
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
+  height: 100vh;
 }
 .card {
   width: 400px;
