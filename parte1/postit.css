@@ -1,0 +1,44 @@
+body {
+  background-color: #666666;
+  font-family: "Indie Flower";
+  margin: 2em;
+}
+h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+p {
+  font-size: 1.8em;
+}
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.card {
+  width: 400px;
+  height: 300px;
+  box-shadow: inset 0px -20px 78px -8px rgba(36, 34, 36, 0.47);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+.card:hover {
+  transform: rotate(0deg) scale(1.4);
+  z-index: 1;
+}
+.yellow {
+  background-color: #efefbb;
+  transform: rotate(355deg);
+}
+.green {
+  background-color: #c7f6c9;
+  transform: rotate(3deg);
+}
+.purple {
+  background-color: #c7c7f3;
+  transform: rotate(351deg);
+}
