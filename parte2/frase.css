@@ -7,4 +7,85 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
-
+#testoAlternato {
+  border: 2px solid #666666;
+  padding: 1.5em 5em 1.5em 1.5em;
+  display: flex;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: #333333;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 6px 4px 15px 0px rgba(77, 77, 77, 0.66);
+}
+i {
+  color: #6a889c;
+  position: absolute;
+  left: 0.2em;
+  white-space: nowrap;
+}
+.parole {
+  position: relative;
+}
+@keyframes movingWords {
+  0% {
+    opacity: 0.25;
+    transform: translateY(-0.5em);
+  }
+  12.5% {
+    opacity: 0.5;
+    transform: translateY(-0.25em);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  37.5% {
+    opacity: 0.5;
+    transform: translateY(0.25em);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+  62.5% {
+    opacity: 0;
+    transform: translateY(0.25em);
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+  87.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#i1 {
+  animation-name: movingWords;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+#i2 {
+  animation-name: movingWords;
+  animation-duration: 6s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+#i3 {
+  animation-name: movingWords;
+  animation-duration: 6s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
